@@ -10,20 +10,18 @@ import RankView from "./route/RankView";
 function App() {
   return (
     <Router>
-      <ScrollTop>
-        <Switch>
-          <RouteLayout
-            exact
-            path = "/"
-            layout = {DefaultLayout}
-            component = {withRouter(MealView)} />
-          <RouteLayout
-            exact
-            path = "/rank"
-            layout = {DefaultLayout}
-            component = {withRouter(RankView)} />
-        </Switch>
-      </ScrollTop>
+      <Switch>
+        <RouteLayout
+          exact
+          path = "/"
+          layout = {DefaultLayout}
+          component = {withRouter(MealView)} />
+        <RouteLayout
+          exact
+          path = "/rank"
+          layout = {DefaultLayout}
+          component = {withRouter(RankView)} />
+      </Switch>
     </Router>
   );
 }
