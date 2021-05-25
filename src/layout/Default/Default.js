@@ -41,9 +41,9 @@ const Default = props => {
   return(
     <Container className={className}>
       <GlobalStyle />
-      <div>
+      <Wrapper>
         {children}
-      </div>
+      </Wrapper>
     </Container>
   );
 }
