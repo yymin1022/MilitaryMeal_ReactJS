@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Section from "./Section";
-
 import styled, {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -43,9 +41,9 @@ const Default = props => {
   return(
     <Container className={className}>
       <GlobalStyle />
-      <Section>
+      <Wrapper>
         {children}
-      </Section>
+      </Wrapper>
     </Container>
   );
 }
