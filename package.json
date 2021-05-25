@@ -6,7 +6,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "0.9.5",
-    "prop-types": "^15.5.7"
+    "prop-types": "^15.5.7",
+    "@material-ui": "^4.11"
   },
   "devDependencies": {},
   "scripts": {
