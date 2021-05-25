@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Switch, withRouter} from "react-router-dom";
+import {BrowserRouter as Router, Switch} from "react-router-dom";
 
 import RouteLayout from "./layout/RouteLayout";
 import DefaultLayout from "./layout/Default";
@@ -15,12 +15,12 @@ function App() {
           exact
           path = "/"
           layout = {DefaultLayout}
-          component = {withRouter(MealView)} />
+          component = {MealView} />
         <RouteLayout
           exact
           path = "/rank"
           layout = {DefaultLayout}
-          component = {withRouter(RankView)} />
+          component = {RankView} />
       </Switch>
     </Router>
   );
