@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {Route} from 'react-router-dom';
 
-const RouteWithLayout = props =>{
+const RouteWithLayout = props => {
   const {
     layout: Layout,
     component: Component,

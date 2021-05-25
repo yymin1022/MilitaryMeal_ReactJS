@@ -23,13 +23,6 @@ const Container = styled.div`
   padding-right: 50px;
 
   height: 100%;
-
-  /* Mobile UI */
-  @media screen and (max-width: 768px){
-    padding-top: 85px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 `;
 
 const Default = props => {
