@@ -1,21 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter as Router, Switch, withRouter} from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+import RouteLayout from "./layout/RouteLayout";
+import DefaultLayout from "./layout/Default";
+
+import MealView from "./route/MealView";
+import RankView from "./route/RankView";
+
+function App() {
+  return (
+    <Router>
+      <ScrollTop>
+        <Switch>
+          <RouteLayout
+            exact
+            path = "/"
+            layout = {DefaultLayout}
+            component = {withRouter(MealView)} />
+          <RouteLayout
+            exact
+            path = "/rank"
+            layout = {DefaultLayout}
+            component = {withRouter(RankView)} />
+        </Switch>
+      </ScrollTop>
+    </Router>
+  );
 }
 
 export default App;
