@@ -10,7 +10,7 @@ class MenuItem extends Component {
     return(
       <div id="menuItem">
         <p>Menu Item Component Start</p>
-        <p>{this.props.menuType}</p>
+        <h4>{this.props.menuType}</h4>
         <p>{this.props.menuList}</p>
         <p>Menu Item Component End</p>
       </div>
