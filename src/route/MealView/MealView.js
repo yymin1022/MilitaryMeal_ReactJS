@@ -6,7 +6,6 @@ class MealView extends Component{
   render(){
     return(
       <div className="MealView">
-        MealView Layout
         <MenuItem
           menuType = "조식"
           menuList = "맛김" />

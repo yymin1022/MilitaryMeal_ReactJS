@@ -9,9 +9,10 @@ class MenuItem extends Component {
   render() {
     return(
       <div id="menuItem">
-        <p>Menu Item Component</p>
+        <p>Menu Item Component Start</p>
         <p>{this.props.menuType}</p>
         <p>{this.props.menuList}</p>
+        <p>Menu Item Component End</p>
       </div>
     )
   }
