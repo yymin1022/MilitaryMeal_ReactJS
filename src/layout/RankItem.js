@@ -7,14 +7,19 @@ class RankItem extends Component {
   }
 
   UNSAFE_componentWillMount(){
-      this.rankList = this.props.rankList;
+      this.rankList = 
   }
 
   render() {
     return(
       <div id="rankItem">
-        RankItem Component
-        <p>{this.rankList}</p>
+        <ul>
+            {
+                this.props.rankList.map((rankItem) => {
+                    return(<li>{rankItem}</li>)
+                })
+            }
+        </ul>
       </div>
     )
   }
