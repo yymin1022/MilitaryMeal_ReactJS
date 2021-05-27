@@ -7,7 +7,7 @@ class RankItem extends Component {
   }
 
   componentDidMount(){
-    const rankList = this.props.rankList.map((rankItem) => {
+    this.rankList = this.props.rankList.map((rankItem) => {
         return(<li>{rankItem}</li>)
     });
   }
@@ -15,7 +15,7 @@ class RankItem extends Component {
   render() {
     return(
       <div id="rankItem">
-        <ul>{rankList}</ul>
+        <ul>{this.rankList}</ul>
       </div>
     )
   }
