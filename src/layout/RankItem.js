@@ -15,7 +15,7 @@ class RankItem extends Component {
   render() {
     return(
       <div id="rankItem">
-        <ul>{this.props.rankList[0]}</ul>
+        <ul>{rankList}</ul>
       </div>
     )
   }
