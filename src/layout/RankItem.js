@@ -15,7 +15,11 @@ class RankItem extends Component {
   render() {
     return(
       <div id="rankItem">
-        <ul>{this.rankList}</ul>
+        <ul>{
+                this.props.rankList.map((rankItem) =>
+                    <li>{rankItem}</li>
+                )
+            }</ul>
       </div>
     )
   }
