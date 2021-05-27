@@ -17,7 +17,7 @@ class RankItem extends Component {
       <div id="rankItem">
         <ul>{
                 this.props.rankList.map((rankItem) =>
-                    <li>{rankItem}</li>
+                    <li>{rankItem.toString()}</li>
                 )
             }</ul>
       </div>
