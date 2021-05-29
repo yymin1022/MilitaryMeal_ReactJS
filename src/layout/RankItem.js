@@ -14,14 +14,12 @@ class RankItem extends Component {
     return(
       <div id="rankItem">
         <ul>
-                {
-                // this.props.rankList.map((rankItem) =>
-                //     <li>{rankItem.toString()}</li>
-                // )
-                }
-                <li>{this.rankList[0]}</li>
-                <li>{this.rankList[1]}</li>
-            </ul>
+          {
+                this.props.rankList.map((rankItem) =>
+                  <li>{rankItem.toString()}</li>
+                )
+          }
+        </ul>
       </div>
     )
   }
