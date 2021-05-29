@@ -6,6 +6,10 @@ class RankItem extends Component {
     this.state = {};
   }
 
+  UNSAFE_componentWillMount(){
+    this.rankList = this.props.rankList;
+  }
+
   render() {
     return(
       <div id="rankItem">
@@ -15,8 +19,8 @@ class RankItem extends Component {
                 //     <li>{rankItem.toString()}</li>
                 // )
                 }
-                <li>{this.props.rankList[0]}</li>
-                <li>{this.props.rankList[1]}</li>
+                <li>{this.rankList[0]}</li>
+                <li>{this.rankList[1]}</li>
             </ul>
       </div>
     )
