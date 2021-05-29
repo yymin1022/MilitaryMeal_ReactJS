@@ -13,14 +13,13 @@ class RankItem extends Component {
   render() {
     return(
       <div id="rankItem">
-        <h3>{this.rankList.length}</h3>
-        {/* <ul>
+        <ul>
           {
                 this.props.rankList.map((rankItem) =>
                   <li>{rankItem.toString()}</li>
                 )
           }
-        </ul> */}
+        </ul>
       </div>
     )
   }
