@@ -27,7 +27,7 @@ function App() {
           exact
           path = "/mealDetail"
           layout = {MealDetailLayout}
-          component = {MealDetailView} />
+          component = {None} />
       </Switch>
     </Router>
   );
