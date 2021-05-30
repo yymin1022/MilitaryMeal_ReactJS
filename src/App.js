@@ -26,8 +26,7 @@ function App() {
         <RouteLayout
           exact
           path = "/mealDetail"
-          layout = {MealDetailLayout}
-          component = {None} />
+          layout = {MealDetailLayout} />
       </Switch>
     </Router>
   );
