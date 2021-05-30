@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 
 import DefaultLayout from "./layout/Default";
-import MealDetailLayout from "./layout/MealDetail/MealDetail";
+import MenuDetailLayout from "./layout/MenuDetail/MenuDetail";
 import RouteLayout from "./layout/RouteLayout";
 
 import MealView from "./route/MealView";
@@ -24,8 +24,8 @@ function App() {
           component = {RankView} />
         <RouteLayout
           exact
-          path = "/mealDetail"
-          layout = {MealDetailLayout} />
+          path = "/menuDetail"
+          layout = {MenuDetailLayout} />
       </Switch>
     </Router>
   );

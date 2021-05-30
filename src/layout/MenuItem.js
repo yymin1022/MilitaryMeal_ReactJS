@@ -28,7 +28,7 @@ class MenuItem extends Component {
     return(
       <div id="menuItem">
         <Link to={{
-          pathname: "/mealDetail",
+          pathname: "/menuDetail",
           state: {
             menuDate: this.menuDate,
             menuList: this.menuList,

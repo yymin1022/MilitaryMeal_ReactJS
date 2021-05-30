@@ -2,7 +2,7 @@ import React, {Component} from "react";
 
 import styled, {createGlobalStyle} from "styled-components";
 
-class MealDetail extends Component{
+class MenuDetail extends Component{
     constructor() {
         super();
         this.state = {};
