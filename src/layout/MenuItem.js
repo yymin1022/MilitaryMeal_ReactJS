@@ -7,18 +7,35 @@ class MenuItem extends Component {
     this.state = {};
   }
 
+  UNSAFE_componentWillMount(){
+    this.menuDate = this.props.menuDate;
+    this.menuList = this.props.menuList;
+
+    switch(this.props.menuType){
+      case 0:
+        this.mealType = "조식";
+        break;
+      case 1:
+        this.menuType = "중식";
+        break;
+      case 2:
+        this.menuType = "석식";
+        break;
+    }
+  }
+
   render() {
     return(
       <Link to={{
         pathname: "/mealDetail",
         state: {
-          mealDate: "",
-          mealType: "",
+          menuDate: "",
+          menuType: "",
         }
         }}>
         <div id="menuItem">
-          <h4>{this.props.menuType}</h4>
-          <p>{this.props.menuList}</p>
+          <h4>{this.menuType}</h4>
+          <p>{this.menuList}</p>
         </div>
       </Link>
       
