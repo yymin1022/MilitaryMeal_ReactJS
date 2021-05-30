@@ -35,7 +35,9 @@ class MenuItem extends Component {
             menuType: this.props.menuType,
           }
           }}>
-            <h4>{this.menuType}</h4>
+            <div>
+              <h4>{this.menuType}</h4>
+            </div>
         </Link>
         
         <p>{this.menuList}</p>
