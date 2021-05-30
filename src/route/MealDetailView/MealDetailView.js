@@ -4,6 +4,7 @@ class MealDetailView extends Component{
   render(){
     return(
       <div className="MealDetailView">
+        MealDetailView
       </div>
     );
   }
