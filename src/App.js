@@ -5,7 +5,7 @@ import DefaultLayout from "./layout/Default";
 import RouteLayout from "./layout/RouteLayout";
 
 import MealView from "./route/MealView";
-import MenuDetail from "./layout/MenuDetail/MenuDetail";
+import MenuDetail from "./route/MenuDetail";
 import RankView from "./route/RankView";
 
 function App() {
