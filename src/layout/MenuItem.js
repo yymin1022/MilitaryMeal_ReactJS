@@ -13,7 +13,7 @@ class MenuItem extends Component {
 
     switch(this.props.menuType){
       case 0:
-        this.mealType = "조식";
+        this.menuType = "조식";
         break;
       case 1:
         this.menuType = "중식";
@@ -26,19 +26,19 @@ class MenuItem extends Component {
 
   render() {
     return(
-      <Link to={{
-        pathname: "/mealDetail",
-        state: {
-          menuDate: "",
-          menuType: "",
-        }
-        }}>
-        <div id="menuItem">
-          <h4>{this.menuType}</h4>
-          <p>{this.menuList}</p>
-        </div>
-      </Link>
-      
+      <div id="menuItem">
+        <Link to={{
+          pathname: "/mealDetail",
+          state: {
+            menuDate: this.menuDate,
+            menuType: this.props.menuType,
+          }
+          }}>
+            <h4>{this.menuType}</h4>
+        </Link>
+        
+        <p>{this.menuList}</p>
+      </div>
     )
   }
 }
