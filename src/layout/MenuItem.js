@@ -9,7 +9,13 @@ class MenuItem extends Component {
 
   render() {
     return(
-      <Link to={"/mealDetail"}>
+      <Link to={{
+        pathname: "/mealDetail",
+        state: {
+          mealDate: "",
+          mealType: "",
+        }
+        }}>
         <div id="menuItem">
           <h4>{this.props.menuType}</h4>
           <p>{this.props.menuList}</p>
