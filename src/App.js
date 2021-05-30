@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch} from "react-router-dom";
 import RouteLayout from "./layout/RouteLayout";
 import DefaultLayout from "./layout/Default";
 
+import MealDetailView from "./route/MealDetailView";
 import MealView from "./route/MealView";
 import RankView from "./route/RankView";
 
@@ -21,6 +22,11 @@ function App() {
           path = "/rank"
           layout = {DefaultLayout}
           component = {RankView} />
+        <RouteLayout
+          exact
+          path = "/mealDetail"
+          layout = {DefaultLayout}
+          component = {MealDetailView} />
       </Switch>
     </Router>
   );
