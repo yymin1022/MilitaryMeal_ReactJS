@@ -34,7 +34,7 @@ const MealDetail = props => {
     <Container className={className}>
       <GlobalStyle />
       <div>
-      MealDetail
+        MealDetail
       </div>
     </Container>
   );

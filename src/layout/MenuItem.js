@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
 class MenuItem extends Component {
   constructor() {
@@ -8,10 +9,13 @@ class MenuItem extends Component {
 
   render() {
     return(
-      <div id="menuItem">
-        <h4>{this.props.menuType}</h4>
-        <p>{this.props.menuList}</p>
-      </div>
+      <Link to={"/mealDetail"}>
+        <div id="menuItem">
+          <h4>{this.props.menuType}</h4>
+          <p>{this.props.menuList}</p>
+        </div>
+      </Link>
+      
     )
   }
 }
