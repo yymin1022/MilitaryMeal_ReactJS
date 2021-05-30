@@ -5,7 +5,6 @@ import DefaultLayout from "./layout/Default";
 import MealDetailLayout from "./layout/MealDetail/MealDetail";
 import RouteLayout from "./layout/RouteLayout";
 
-import MealDetailView from "./route/MealDetailView";
 import MealView from "./route/MealView";
 import RankView from "./route/RankView";
 
