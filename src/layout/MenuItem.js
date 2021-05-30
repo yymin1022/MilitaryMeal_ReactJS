@@ -31,6 +31,7 @@ class MenuItem extends Component {
           pathname: "/mealDetail",
           state: {
             menuDate: this.menuDate,
+            menuList: this.menuList,
             menuType: this.props.menuType,
           }
           }}>
