@@ -12,13 +12,13 @@ class MenuItem extends Component {
     this.menuList = this.props.menuList;
 
     switch(this.props.menuType){
-      case 0:
+      case "0":
         this.menuType = "조식";
         break;
-      case 1:
+      case "1":
         this.menuType = "중식";
         break;
-      case 2:
+      case "2":
         this.menuType = "석식";
         break;
     }

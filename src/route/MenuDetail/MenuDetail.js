@@ -6,17 +6,17 @@ class MenuDetail extends Component{
         this.menuList = this.props.location.state.menuList;
     
         switch(this.props.location.state.menuType){
-          case 0:
-            this.menuType = "조식";
-            break;
-          case 1:
-            this.menuType = "중식";
-            break;
-          case 2:
-            this.menuType = "석식";
-            break;
+            case "0":
+                this.menuType = "조식";
+                break;
+            case "1":
+                this.menuType = "중식";
+                break;
+            case "2":
+                this.menuType = "석식";
+                break;
         }
-      }
+    }
 
     render(){
         const GlobalStyle = createGlobalStyle`
