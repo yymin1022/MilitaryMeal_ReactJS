@@ -19,22 +19,8 @@ class MenuDetail extends Component{
     }
 
     render(){
-        const GlobalStyle = createGlobalStyle`
-            html, body {
-                height: 100%
-            }
-            body {
-                padding: 0;
-                margin: 0;
-            }
-            #root {
-                height: 100%;
-            }
-            `;
-
         return(
             <div className="MenuDetail">
-              <GlobalStyle />
               <div>
                 <h3>MenuDetail</h3>
                 <h4>{this.menuDate} / {this.menuType}</h4>
