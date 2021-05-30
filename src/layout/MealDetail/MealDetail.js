@@ -54,7 +54,9 @@ class MealDetail extends Component{
             <Container className={className}>
               <GlobalStyle />
               <div>
-                MealDetail
+                <h3>MealDetail</h3>
+                <h4>{this.menuDate} / {this.menuType}</h4>
+                <p>{this.menuList}</p>
               </div>
             </Container>
         );
