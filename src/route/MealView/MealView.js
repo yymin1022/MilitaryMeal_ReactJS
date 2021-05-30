@@ -7,14 +7,17 @@ class MealView extends Component{
     return(
       <div className="MealView">
         <MenuItem
-          menuType = "조식"
-          menuList = "맛김" />
+          menuDate = "20210527"
+          menuList = "맛김"
+          menuType = "0" />
         <MenuItem
-          menuType = "중식"
-          menuList = "돼김볶" />
+          menuDate = "20210527"
+          menuList = "돼김볶"
+          menuType = "1" />
         <MenuItem
-          menuType = "석식"
-          menuList = "햄소찌" />
+          menuDate = "20210527"
+          menuList = "햄소찌"
+          menuType = "2" />
       </div>
     );
   }
