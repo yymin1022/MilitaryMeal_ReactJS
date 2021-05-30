@@ -51,14 +51,14 @@ class MenuDetail extends Component{
         
 
         return(
-            <Container className={className}>
+            <div className="MenuDetail">
               <GlobalStyle />
               <div>
                 <h3>MenuDetail</h3>
                 <h4>{this.menuDate} / {this.menuType}</h4>
                 <p>{this.menuList}</p>
               </div>
-            </Container>
+            </div>
         );
     }
   }
