@@ -12,28 +12,25 @@ import RankView from "./route/RankView";
 function App() {
   return (
     <Router>
-      <Route
-        render={() => (
-          {LoginView}
-        )}
-          exact
-          path = "/login" />
       <Switch>
+        <Route path="/login">
+          <LoginView />
+        </Route>
         <RouteLayout
           exact
-          path = "/"
-          layout = {DefaultLayout}
-          component = {MealView} />
+          path="/"
+          layout={DefaultLayout}
+          component={MealView} />
         <RouteLayout
           exact
-          path = "/menuDetail"
-          layout = {DefaultLayout}
-          component = {MenuDetail} />
+          path="/menuDetail"
+          layout={DefaultLayout}
+          component={MenuDetail} />
         <RouteLayout
           exact
-          path = "/rank"
-          layout = {DefaultLayout}
-          component = {RankView} />
+          path="/rank"
+          layout={DefaultLayout}
+          component={RankView} />
       </Switch>
     </Router>
   );
