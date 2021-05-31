@@ -1,5 +1,7 @@
 import React from "react";
 
+import styled from "styled-components";
+
 const Container = styled.div`
   padding-top: 100px;
   padding-bottom: 150px;
@@ -14,7 +16,7 @@ const Empty = props => {
   } = props;
   
   return(
-    <Container className={className}>
+    <Container>
       <div>
         {children}
       </div>
