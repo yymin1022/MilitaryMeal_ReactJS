@@ -17,7 +17,17 @@ class LoginView extends Component{
           }
         }}>
           <button type="btnLogin">
-            Login
+            Login(Success)
+          </button>
+        </Link>
+        <Link to={{
+          pathname: "/",
+          state: {
+            currentSession: "TEST_FAIL_SESSION"
+          }
+        }}>
+          <button type="btnLogin">
+            Login(Fail)
           </button>
         </Link>
       </div>
