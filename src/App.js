@@ -13,21 +13,19 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/login">
-          <LoginView />
-        </Route>
         <RouteLayout
           exact
           path="/"
           layout={DefaultLayout}
           component={MealView} />
+        <Route 
+          path="/login"
+          component={LoginView} />
         <RouteLayout
-          exact
           path="/menuDetail"
           layout={DefaultLayout}
           component={MenuDetail} />
         <RouteLayout
-          exact
           path="/rank"
           layout={DefaultLayout}
           component={RankView} />
