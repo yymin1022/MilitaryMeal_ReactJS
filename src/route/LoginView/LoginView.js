@@ -8,7 +8,7 @@ class LoginView extends Component{
 
   render(){
     return(
-      <div className="MealView">
+      <div className="LoginView">
         LoginView
       </div>
     );
