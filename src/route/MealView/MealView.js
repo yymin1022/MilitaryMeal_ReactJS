@@ -11,13 +11,13 @@ class MealView extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    this.isLogined = this.props.isLogined;
+    this.isSessionOK = this.props.isSessionOK;
   }
 
   render(){
     return(
       <div className="MealView">
-        <If condition={!this.isLogined}>
+        <If condition={!this.isSessionOK}>
           <Then>
             <Redirect to="/login" />
           </Then>

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class LoginView extends Component{
   constructor() {
@@ -9,7 +10,11 @@ class LoginView extends Component{
   render(){
     return(
       <div className="LoginView">
-        LoginView
+        <Link to="/">
+          <button type="btnLogin">
+            Login
+          </button>
+        </Link>
       </div>
     );
   }
