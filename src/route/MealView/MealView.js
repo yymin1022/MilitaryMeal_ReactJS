@@ -1,11 +1,27 @@
 import React, {Component} from 'react';
+import {If, Else, Then} from "react-if";
+import {Redirect} from 'react-router-dom';
 
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
 
 class MealView extends Component{
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  UNSAFE_componentWillMount(){
+    this.isLogined = this.props.isLogined;
+  }
+
   render(){
     return(
       <div className="MealView">
+        <If condition={!this.isLogined}>
+          <Then>
+            <Redirect to="/login" />
+          </Then>
+        </If>
         <MenuItem
           menuDate = "20210527"
           menuList = "맛김"
