@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import {BrowserRouter as Route, Router, Switch} from "react-router-dom";
 
 import DefaultLayout from "./layout/Default";
@@ -18,10 +18,9 @@ function App() {
           path = "/"
           layout = {DefaultLayout}
           component = {MealView} />
-        <RouteLayout
+        <Route
           exact
           path = "/login"
-          layout = {<div></div>}
           component = {LoginView} />
         <RouteLayout
           exact
