@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import SessionCheck from "/home/server/ui/src/SessionCheck";
+
 class MenuDetail extends Component{
     UNSAFE_componentWillMount(){
         this.currentSession = this.props.location.state.currentSession;

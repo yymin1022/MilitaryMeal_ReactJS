@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import SessionCheck from "/home/server/ui/src/SessionCheck";
 import RankItem from "/home/server/ui/src/layout/RankItem";
 
 class RankView extends Component{
