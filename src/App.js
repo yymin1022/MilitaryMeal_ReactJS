@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Route, Router, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Switch} from "react-router-dom";
 
 import DefaultLayout from "./layout/Default";
 import RouteLayout from "./layout/RouteLayout";
@@ -12,9 +12,10 @@ import RankView from "./route/RankView";
 function App() {
   return (
     <Router>
-      <Route
+      <RouteLayout
           exact
           path = "/login"
+          layout = {<div></div>}
           component = {LoginView} />
       <Switch>
         <RouteLayout
