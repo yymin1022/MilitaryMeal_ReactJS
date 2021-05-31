@@ -12,17 +12,18 @@ import RankView from "./route/RankView";
 function App() {
   return (
     <Router>
+      <RouteLayout
+          exact
+          path = "/login"
+          layout = {DefaultLayout}
+          component = {LoginView} />
       <Switch>
         <RouteLayout
           exact
           path = "/"
           layout = {DefaultLayout}
           component = {MealView} />
-        <RouteLayout
-          exact
-          path = "/login"
-          layout = {DefaultLayout}
-          component = {LoginView} />
+        
         <RouteLayout
           exact
           path = "/menuDetail"
