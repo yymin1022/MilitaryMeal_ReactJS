@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 
 import DefaultLayout from "./layout/Default";
+import EmptyLayout from "./layoutEmpty";
 import RouteLayout from "./layout/RouteLayout";
 
 import LoginView from "./route/LoginView";
@@ -20,6 +21,7 @@ function App() {
           component={MealView} />
         <RouteLayout
           path="/login"
+          layout={EmptyLayout}
           component={LoginView} />
         <RouteLayout
           path="/menuDetail"
