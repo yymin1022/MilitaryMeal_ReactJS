@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
-import {If, Then} from "react-if";
-import {Redirect} from 'react-router-dom';
 
 class MenuDetail extends Component{
     UNSAFE_componentWillMount(){
         this.currentSession = this.props.location.state.currentSession;
-
-        if(this.currentSession == "TEST_SESSION"){
-            this.isSessionOK = true;
-        }
 
         this.menuDate = this.props.location.state.menuDate;
         this.menuList = this.props.location.state.menuList;
@@ -29,16 +23,12 @@ class MenuDetail extends Component{
     render(){
         return(
             <div className="MenuDetail">
-                <If condition={!this.isSessionOK}>
-                <Then>
-                    <Redirect to="/login" />
-                </Then>
-                </If>
-              <div>
-                <h3>MenuDetail</h3>
-                <h4>{this.menuDate} / {this.menuType}</h4>
-                <p>{this.menuList}</p>
-              </div>
+                <SessionCheck currentSession={this.currentSession}/>
+                <div>
+                    <h3>MenuDetail</h3>
+                    <h4>{this.menuDate} / {this.menuType}</h4>
+                    <p>{this.menuList}</p>
+                </div>
             </div>
         );
   }

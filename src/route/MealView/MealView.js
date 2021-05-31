@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {If, Then} from "react-if";
-import {Redirect} from 'react-router-dom';
 
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
+import SessionCheck from "/home/server/ui/src/SessionCheck";
 
 class MealView extends Component{
   constructor() {
@@ -12,20 +11,12 @@ class MealView extends Component{
 
   UNSAFE_componentWillMount(){
     this.currentSession = this.props.location.state.currentSession;
-
-    if(this.currentSession == "TEST_SESSION"){
-      isSessionOK = true;
-    }
   }
 
   render(){
     return(
       <div className="MealView">
-        <If condition={!this.isSessionOK}>
-          <Then>
-            <Redirect to="/login" />
-          </Then>
-        </If>
+        <SessionCheck currentSession={this.currentSession}/>
         <MenuItem
           menuDate = "20210527"
           menuList = "맛김"
