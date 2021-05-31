@@ -14,7 +14,7 @@ class MealView extends Component{
     this.currentSession = this.props.location.state.currentSession;
 
     if(this.currentSession == "TEST_SESSION"){
-      this.isSessionOK = true;
+      isSessionOK = true;
     }
   }
 
