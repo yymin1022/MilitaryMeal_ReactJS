@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Switch} from "react-router-dom";
 
 import DefaultLayout from "./layout/Default";
-import EmptyLayout from "./layoutEmpty";
+import EmptyLayout from "./layout/Empty";
 import RouteLayout from "./layout/RouteLayout";
 
 import LoginView from "./route/LoginView";
