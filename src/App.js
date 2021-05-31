@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Route, Router, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Switch} from "react-router-dom";
 
 import DefaultLayout from "./layout/Default";
 import RouteLayout from "./layout/RouteLayout";
@@ -18,11 +18,11 @@ function App() {
           path = "/"
           layout = {DefaultLayout}
           component = {MealView} />
-        {/* <RouteLayout
+        <RouteLayout
           exact
           path = "/login"
           layout = {DefaultLayout}
-          component = {LoginView} /> */}
+          component = {LoginView} />
         <RouteLayout
           exact
           path = "/menuDetail"
