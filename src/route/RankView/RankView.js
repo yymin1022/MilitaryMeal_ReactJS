@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {If, Then} from "react-if";
+import {Redirect} from 'react-router-dom';
 
 import RankItem from "/home/server/ui/src/layout/RankItem";
 
