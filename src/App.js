@@ -17,15 +17,13 @@ function App() {
           {LoginView}
         )}
           exact
-          path = "/login"
-          component =  />
+          path = "/login" />
       <Switch>
         <RouteLayout
           exact
           path = "/"
           layout = {DefaultLayout}
           component = {MealView} />
-        
         <RouteLayout
           exact
           path = "/menuDetail"
