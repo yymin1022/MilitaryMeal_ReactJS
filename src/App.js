@@ -21,7 +21,7 @@ function App() {
         <RouteLayout
           exact
           path = "/login"
-          layout = {<div>{children}</div>}
+          layout = {<div></div>}
           component = {LoginView} />
         <RouteLayout
           exact
