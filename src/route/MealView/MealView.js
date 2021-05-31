@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {If, Else, Then} from "react-if";
+import {If, Then} from "react-if";
 import {Redirect} from 'react-router-dom';
 
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
@@ -11,7 +11,7 @@ class MealView extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    this.isLogined = this.props.isLogined;
+    this.isLogined = false;//this.props.isLogined;
   }
 
   render(){
