@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {withRouter} from 'react-router-dom';
 
 class LoginView extends Component{
   constructor() {
@@ -16,4 +15,4 @@ class LoginView extends Component{
   }
 }
 
-export default withRouter(LoginView);
+export default LoginView;
