@@ -11,7 +11,7 @@ class MealView extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    this.isLogined = false;//this.props.isLogined;
+    this.isLogined = this.props.isLogined;
   }
 
   render(){
