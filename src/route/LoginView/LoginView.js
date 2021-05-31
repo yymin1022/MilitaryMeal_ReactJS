@@ -13,7 +13,7 @@ class LoginView extends Component{
         <Link to={{
           pathname: "/",
           state: {
-            isSessionOK: true
+            currentSession: "TEST_SESSION"
           }
         }}>
           <button type="btnLogin">

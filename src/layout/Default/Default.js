@@ -39,7 +39,7 @@ const Default = props => {
         <Link to={{
           pathname: "/",
           state: {
-            isSessionOK: true
+            currentSession: "TEST_SESSION"
           }
         }}>
           <p>MealView</p>
@@ -47,7 +47,7 @@ const Default = props => {
         <Link to={{
           pathname: "/rank",
           state: {
-            isSessionOK: true
+            currentSession: "TEST_SESSION"
           }
         }}>
           <p>RankView</p>

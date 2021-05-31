@@ -6,7 +6,11 @@ import RankItem from "/home/server/ui/src/layout/RankItem";
 
 class RankView extends Component{
   UNSAFE_componentWillMount(){
-    this.isSessionOK = this.props.location.state.isSessionOK;
+    this.currentSession = this.props.location.state.currentSession;
+
+    if(this.currentSession == "TEST_SESSION"){
+      isSessionOK = true;
+    }
   }
 
   render(){

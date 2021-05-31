@@ -29,7 +29,7 @@ class MenuItem extends Component {
       <Link to={{
         pathname: "/menuDetail",
         state: {
-          isSessionOK: true,
+          currentSession: "TEST_SESSION",
 
           menuDate: this.menuDate,
           menuList: this.menuList,
