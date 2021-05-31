@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import styled from "styled-components";
 
@@ -13,15 +14,22 @@ const Container = styled.div`
 
 const Empty = props => {
   const{
+    className,
+    children,
   } = props;
   
   return(
-    <Container>
+    <Container className={className}>
       <div>
         {children}
       </div>
     </Container>
   );
+}
+
+Default.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
 }
 
 export default Empty;
