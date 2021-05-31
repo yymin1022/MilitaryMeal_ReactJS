@@ -36,10 +36,20 @@ const Default = props => {
     <Container className={className}>
       <GlobalStyle />
       <div className="Navigator">
-        <Link to={"/"}>
+        <Link to={{
+          pathname: "/",
+          state: {
+            isSessionOK: true
+          }
+        }}>
           <p>MealView</p>
         </Link>
-        <Link to={"/rank"}>
+        <Link to={{
+          pathname: "/rank",
+          state: {
+            isSessionOK: true
+          }
+        }}>
           <p>RankView</p>
         </Link>
       </div>
