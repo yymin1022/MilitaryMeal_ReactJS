@@ -13,9 +13,12 @@ function App() {
   return (
     <Router>
       <Route
+        render={() => (
+          {LoginView}
+        )}
           exact
           path = "/login"
-          component = {LoginView} />
+          component =  />
       <Switch>
         <RouteLayout
           exact
