@@ -20,7 +20,6 @@ function App() {
           component={MealView} />
         <RouteLayout
           path="/login"
-          layout={DefaultLayout}
           component={LoginView} />
         <RouteLayout
           path="/menuDetail"
