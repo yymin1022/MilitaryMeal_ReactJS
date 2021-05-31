@@ -27,7 +27,7 @@ const Empty = props => {
   );
 }
 
-Default.propTypes = {
+Empty.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
 }
