@@ -7,7 +7,7 @@ class MenuDetail extends Component{
         this.currentSession = this.props.location.state.currentSession;
 
         if(this.currentSession == "TEST_SESSION"){
-          isSessionOK = true;
+            this.isSessionOK = true;
         }
 
         this.menuDate = this.props.location.state.menuDate;
