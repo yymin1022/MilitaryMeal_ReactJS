@@ -5,7 +5,7 @@ import SessionCheck from "/home/server/ui/src/SessionCheck";
 class MenuDetail extends Component{
     UNSAFE_componentWillMount(){
         this.currentSession = "NO_LOGIN";
-        if(this.props.location.state.currentSession != null){
+        if(this.props.location.state.currentSession != undefined){
             this.currentSession = this.props.location.state.currentSession;
         }
 
