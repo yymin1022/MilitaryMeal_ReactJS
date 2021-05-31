@@ -18,13 +18,11 @@ class SessionCheck extends Component{
 
   render(){
     return(
-      <>
         <If condition={!this.isSessionOK}>
             <Then>
                 <Redirect to="/login" />
             </Then>
         </If>
-      </>
     );
   }
 }
