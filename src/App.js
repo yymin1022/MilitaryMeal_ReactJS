@@ -18,7 +18,7 @@ function App() {
           path="/"
           layout={DefaultLayout}
           component={MealView} />
-        <Route 
+        <RouteLayout
           path="/login"
           component={LoginView} />
         <RouteLayout
