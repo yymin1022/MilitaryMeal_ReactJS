@@ -10,7 +10,12 @@ class LoginView extends Component{
   render(){
     return(
       <div className="LoginView">
-        <Link to="/">
+        <Link to={{
+          pathname: "/",
+          state: {
+            isSessionOK: true
+          }
+        }}>
           <button type="btnLogin">
             Login
           </button>
