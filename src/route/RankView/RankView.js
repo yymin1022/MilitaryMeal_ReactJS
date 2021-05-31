@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {If, Then} from "react-if";
 
 import RankItem from "/home/server/ui/src/layout/RankItem";
 
