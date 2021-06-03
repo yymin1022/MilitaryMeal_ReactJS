@@ -24,10 +24,10 @@
 }
 
 .menuTitle{
-    width: 100%;
+    width: 80%;
 
     border: 1px solid black;
-    border-radius: 20;
+    border-radius: 1%;
     display: flex;
     justify-content: center;
     margin: 10px;
