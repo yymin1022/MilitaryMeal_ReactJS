@@ -1,4 +1,4 @@
-git pull origin master
-npm run  build
-/etc/init.d/apache2 restart
+sudo git pull origin master
+sudo npm run  build
+sudo /etc/init.d/apache2 restart
 echo "Done..!"
