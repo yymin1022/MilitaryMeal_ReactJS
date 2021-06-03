@@ -26,7 +26,7 @@ const Default = props => {
   return(
     <div className={className}>
       <GlobalStyle />
-      <div className="Navigator">
+      <div className="Header">
         <Link to="/">
           <p>MealView</p>
         </Link>
