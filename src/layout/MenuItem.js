@@ -60,7 +60,7 @@ class MenuItem extends Component {
                     <p>{menuData.calory}kcal</p>
                   </div>
                   <div className="menuElementThumb">
-                    <FontAwesomeIcon className="iconThumb" icon={faThumbON} size="1x" />
+                    <FontAwesomeIcon className="iconThumb" icon={faThumbON} />
                   </div>
                 </div>
               )
