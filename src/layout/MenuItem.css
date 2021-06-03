@@ -1,3 +1,7 @@
+.menuContent{
+    margin: 10px;
+}
+
 .menuElement{
     height: 30px;
     width: 100%;
@@ -36,6 +40,9 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .menuTitle p{

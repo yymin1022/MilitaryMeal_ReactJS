@@ -42,6 +42,7 @@ class MenuItem extends Component {
           <div className="menuTitle">
             <p>{this.menuType}</p>
           </div>
+          <div className="menuContent">
           {
             this.menuList.map(menuData => {
               return(
@@ -56,6 +57,7 @@ class MenuItem extends Component {
               )
             })
           }
+          </div>
         </div>
       </Link>
     )
