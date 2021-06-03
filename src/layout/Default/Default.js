@@ -29,12 +29,17 @@ const Default = props => {
     <div className={className}>
       <GlobalStyle />
       <div className="Header">
-        <Link to="/">
-          <div>MealView</div>
-        </Link>
-        <Link to="/rank">
-          <div>RankView</div>
-        </Link>
+        <div className="HeaderLogo">
+          LOGO
+        </div>
+        <div className="HeaderNav">
+          <Link to="/">
+            <div>MealView</div>
+          </Link>
+          <Link to="/rank">
+            <div>RankView</div>
+          </Link>
+        </div>
       </div>
       <div>
         {children}
