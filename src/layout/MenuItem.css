@@ -31,6 +31,10 @@
     margin: 10px;
 }
 
+.menuLink{
+    text-decoration: none;
+}
+
 .menuTitle{
     height: 30px;
 
@@ -46,8 +50,4 @@
 
 .menuTitle p{
     font-size: 17px;
-}
-
-Link{
-    text-decoration: none;
 }

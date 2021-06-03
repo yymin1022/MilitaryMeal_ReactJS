@@ -28,15 +28,17 @@ class MenuItem extends Component {
 
   render() {
     return(
-      <Link to={{
-        pathname: "/menuDetail",
-        state: {
-          currentSession: "TEST_SESSION",
+      <Link
+        className="menuLink"
+        to={{
+          pathname: "/menuDetail",
+          state: {
+            currentSession: "TEST_SESSION",
 
-          menuDate: this.menuDate,
-          menuList: this.menuList,
-          menuType: this.props.menuType,
-        }
+            menuDate: this.menuDate,
+            menuList: this.menuList,
+            menuType: this.props.menuType,
+          }
         }}>
         <div id="menuItem">
           <div className="menuTitle">
