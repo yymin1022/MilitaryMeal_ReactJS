@@ -41,7 +41,10 @@ class MenuItem extends Component {
           {
             this.menuList.map(menuElement => {
               return(
-                <p>{menuElement.name}</p>
+                <div className="menuElement">
+                  <p>{menuElement.name}</p>
+                  <p>{menuElement.calory}</p>
+                </div>
               )
             })
           }
