@@ -39,7 +39,9 @@ class MenuItem extends Component {
         }
         }}>
         <div id="menuItem">
-          <h4>{this.menuType}</h4>
+          <div className="menuTitle">
+            <h4>{this.menuType}</h4>
+          </div>
           {
             this.menuList.map(menuData => {
               return(
