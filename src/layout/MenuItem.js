@@ -47,10 +47,10 @@ class MenuItem extends Component {
               return(
                 <div className="menuElement">
                   <div className="menuElementName">
-                    {menuData.name}
+                    <p>{menuData.name}</p>
                   </div>
                   <div className="menuElementCalory">
-                    {menuData.calory}kcal
+                    <p>{menuData.calory}kcal</p>
                   </div>
                 </div>
               )
