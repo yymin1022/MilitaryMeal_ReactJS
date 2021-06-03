@@ -1,0 +1,4 @@
+#menuElement{
+    display: flex;
+    flex-direction: row;
+}
