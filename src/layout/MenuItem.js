@@ -39,11 +39,11 @@ class MenuItem extends Component {
         <div id="menuItem">
           <h4>{this.menuType}</h4>
           {
-            this.menuList.map(menuElement => {
+            this.menuList.map(menuData => {
               return(
                 <div className="menuElement">
-                  <p>{menuElement.name}</p>
-                  <p>{menuElement.calory}kcal</p>
+                  <p>{menuData.name}</p>
+                  <p>{menuData.calory}kcal</p>
                 </div>
               )
             })
