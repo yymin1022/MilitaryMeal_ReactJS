@@ -26,21 +26,11 @@ const Default = props => {
   return(
     <div className={className}>
       <GlobalStyle />
-      <div className="Navigator">
-        <Link to={{
-          pathname: "/",
-          state: {
-            currentSession: "TEST_SESSION"
-          }
-        }}>
+      <div className="Header">
+        <Link to="/">
           <p>MealView</p>
         </Link>
-        <Link to={{
-          pathname: "/rank",
-          state: {
-            currentSession: "TEST_SESSION"
-          }
-        }}>
+        <Link to="/rank">
           <p>RankView</p>
         </Link>
       </div>
