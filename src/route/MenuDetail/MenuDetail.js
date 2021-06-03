@@ -29,7 +29,20 @@ class MenuDetail extends Component{
                 <div>
                     <h3>MenuDetail</h3>
                     <h4>{this.menuDate} / {this.menuType}</h4>
-                    <p>{this.menuList}</p>
+                    {
+                        this.menuList.map(menuData => {
+                            return(
+                                <div className="menuElement">
+                                    <div>
+                                        {menuData.name}
+                                    </div>
+                                    <div>
+                                        {menuData.calory}kcal
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         );
