@@ -2,22 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
-import {createGlobalStyle} from "styled-components";
-
 import "./Default.css";
-
-const GlobalStyle = createGlobalStyle`
-  html, body {
-    height: 100%
- }
-	body {
-		padding: 0;
-    margin: 0;
- }
-  #root {
-    height: 100%;
- }
-`;
 
 const Default = props => {
   const{
@@ -27,7 +12,6 @@ const Default = props => {
   
   return(
     <div className={className}>
-      <GlobalStyle />
       <div className="Header">
         <div className="HeaderLogo">
           LOGO
