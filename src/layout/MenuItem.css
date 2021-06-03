@@ -7,8 +7,16 @@
     width: 50px;
 }
 
+.menuElementCalory p{
+    font-size: 25px;
+}
+
 .menuElementName{
     width: 100px;
+}
+
+.menuElementName p{
+    font-size: 25px;
 }
 
 .menuTitle{
