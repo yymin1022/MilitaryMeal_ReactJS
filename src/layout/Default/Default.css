@@ -1,7 +1,17 @@
 .Header{
-    height: 100px;
+    height: 50px;
     width: 100%;
 
     display: flex;
     flex-direction: row;
+}
+
+.HeaderLogo{
+    height: 50px;
+    width: 50px;
+}
+
+.HeaderNav{
+    display: flex;
+    flex-direction: row-reverse;
 }
