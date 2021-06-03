@@ -1,6 +1,10 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
+import {faThumbON} from "@fortawesome/free-solid-svg-icons";
+import {faThumbOFF} from "@fortawesome/free-regular-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 import "./MenuItem.css";
 
 class MenuItem extends Component {
@@ -56,7 +60,7 @@ class MenuItem extends Component {
                     <p>{menuData.calory}kcal</p>
                   </div>
                   <div className="menuElementVote">
-              
+                    <FontAwesomeIcon icon={faThumbON} size="2x" />
                   </div>
                 </div>
               )

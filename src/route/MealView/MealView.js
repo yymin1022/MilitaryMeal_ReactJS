@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 
-import {faThumbON} from "@fortawesome/free-solid-svg-icons";
-import {faThumbOFF} from "@fortawesome/free-regular-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
 import SessionCheck from "/home/server/ui/src/SessionCheck";
 
@@ -24,7 +20,6 @@ class MealView extends Component{
       <div className="MealView">
         {/* <SessionCheck currentSession={this.currentSession}/> */}
         <div className="mealDate">
-          <FontAwesomeIcon icon={faThumbON} size="2x" />
         </div>
         <div className="mealItem">
           <MenuItem
