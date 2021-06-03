@@ -17,6 +17,7 @@
 
 .menuElementCalory p{
     font-size: 10px;
+    text-decoration: none;
 }
 
 .menuElementName{
@@ -25,6 +26,7 @@
 
 .menuElementName p{
     font-size: 17px;
+    text-decoration: none;
 }
 
 .menuItem{
@@ -46,4 +48,5 @@
 
 .menuTitle p{
     font-size: 17px;
+    text-decoration: none;
 }
