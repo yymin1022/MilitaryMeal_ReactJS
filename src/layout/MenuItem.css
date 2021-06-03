@@ -5,7 +5,6 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin: 10px;
 }
 
 .menuElementCalory{
@@ -22,6 +21,10 @@
 
 .menuElementName p{
     font-size: 17px;
+}
+
+.menuItem{
+    margin: 10px;
 }
 
 .menuTitle{
