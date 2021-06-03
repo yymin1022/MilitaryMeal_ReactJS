@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
 
-import styled, {createGlobalStyle} from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -17,15 +17,6 @@ const GlobalStyle = createGlobalStyle`
  }
 `;
 
-const Container = styled.div`
-  padding-top: 100px;
-  padding-bottom: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
-
-  height: 100%;
-`;
-
 const Default = props => {
   const{
     className,
@@ -33,7 +24,7 @@ const Default = props => {
   } = props;
   
   return(
-    <Container className={className}>
+    <div className={className}>
       <GlobalStyle />
       <div className="Navigator">
         <Link to={{
@@ -56,7 +47,7 @@ const Default = props => {
       <div>
         {children}
       </div>
-    </Container>
+    </div>
   );
 }
 
