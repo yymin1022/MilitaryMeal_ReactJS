@@ -28,7 +28,7 @@
 }
 
 .menuItem{
-    margin: 20px;
+    margin: 10px;
 }
 
 .menuTitle{
@@ -39,6 +39,7 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 
 .menuTitle p{
