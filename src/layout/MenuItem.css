@@ -10,3 +10,11 @@
 .menuElementName{
     width: 100px;
 }
+
+.menuTitle{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
