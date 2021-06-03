@@ -2,9 +2,10 @@
     height: 30px;
     width: 100%;
 
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin: 10px;
 }
 
 .menuElementCalory{
@@ -30,7 +31,6 @@
     border-radius: 5%;
     display: flex;
     justify-content: center;
-    margin-block: 10px;
 }
 
 .menuTitle p{
