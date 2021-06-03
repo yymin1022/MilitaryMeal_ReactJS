@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
+import "MenuItem.css"
+
 class MenuItem extends Component {
   constructor() {
     super();
