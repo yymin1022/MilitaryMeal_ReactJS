@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
 import SessionCheck from "/home/server/ui/src/SessionCheck";
 
+import "./MealView.css";
+
 class MealView extends Component{
   constructor() {
     super();
