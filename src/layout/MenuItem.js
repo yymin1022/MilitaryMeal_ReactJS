@@ -55,6 +55,9 @@ class MenuItem extends Component {
                   <div className="menuElementCalory">
                     <p>{menuData.calory}kcal</p>
                   </div>
+                  <div className="menuElementVote">
+              
+                  </div>
                 </div>
               )
             })
