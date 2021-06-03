@@ -10,10 +10,7 @@ class MealView extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    this.currentSession = "NO_LOGIN";
-    if(!this.props.location.state.currentSession){
-      this.currentSession = this.props.location.state.currentSession;
-    }
+    this.currentSession = this.props.location.state.currentSession;
   }
 
   render(){
