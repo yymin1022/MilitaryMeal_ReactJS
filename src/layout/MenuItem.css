@@ -28,9 +28,10 @@
 }
 
 .menuTitle{
+    height: 25px;
     width: 100%;
 
-    border: 2px solid black;
+    border: 2px solid #505050;
     border-radius: 5%;
     display: flex;
     justify-content: center;
