@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 
 import {createGlobalStyle} from "styled-components";
 
+import "./Default.css";
+
 const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100%
