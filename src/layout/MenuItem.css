@@ -27,8 +27,9 @@
     width: 100%;
 
     border: 1px solid black;
-    border-radius: 20;
+    border-radius: 5%;
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
