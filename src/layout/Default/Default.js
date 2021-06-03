@@ -28,10 +28,10 @@ const Default = props => {
       <GlobalStyle />
       <div className="Header">
         <Link to="/">
-          <p>MealView</p>
+          <div>MealView</div>
         </Link>
         <Link to="/rank">
-          <p>RankView</p>
+          <div>RankView</div>
         </Link>
       </div>
       <div>
