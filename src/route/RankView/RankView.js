@@ -5,7 +5,7 @@ import RankItem from "/home/server/ui/src/layout/RankItem";
 
 class RankView extends Component{
   UNSAFE_componentWillMount(){
-    this.currentSession = this.props.location.state.currentSession;
+    // this.currentSession = this.props.location.state.currentSession;
   }
 
   render(){
@@ -13,7 +13,7 @@ class RankView extends Component{
 
     return(
       <div className="RankView">
-        <SessionCheck currentSession={this.currentSession}/>
+        {/* <SessionCheck currentSession={this.currentSession}/> */}
         <RankItem 
           rankList = {this.rankList}/>
       </div>

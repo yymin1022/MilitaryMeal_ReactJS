@@ -10,13 +10,13 @@ class MealView extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    this.currentSession = this.props.location.state.currentSession;
+    // this.currentSession = this.props.location.state.currentSession;
   }
 
   render(){
     return(
       <div className="MealView">
-        <SessionCheck currentSession={this.currentSession}/>
+        {/* <SessionCheck currentSession={this.currentSession}/> */}
         <MenuItem
           menuDate = "20210527"
           menuList = "맛김"
