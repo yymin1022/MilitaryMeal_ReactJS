@@ -20,7 +20,7 @@ class MealView extends Component{
       <div className="MealView">
         {/* <SessionCheck currentSession={this.currentSession}/> */}
         <div className="mealDate">
-
+          
         </div>
         <div className="mealItem">
           <MenuItem
