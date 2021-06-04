@@ -26,39 +26,51 @@ class MealView extends Component{
             menuDate = "20210527"
             menuList = {[
               {name: "쌀밥",
-              calory: 100},
+              calory: 100,
+              isLiked: true},
               {name: "김치찌개",
-              calory: 100},
+              calory: 100,
+              isLiked: false},
               {name: "버섯볶음",
-              calory: 100},
+              calory: 100,
+              isLiked: true},
               {name: "오이무침",
-              calory: 100}
+              calory: 100,
+              isLiked: false}
             ]}
             menuType = "0" />
           <MenuItem
             menuDate = "20210527"
             menuList = {[
               {name: "쌀밥",
-              calory: 100},
+              calory: 100,
+              isLiked: true},
               {name: "호박된장찌개",
-              calory: 100},
+              calory: 100,
+              isLiked: true},
               {name: "맛김",
-              calory: 100},
+              calory: 100,
+              isLiked: false},
               {name: "고등어순살조림",
-              calory: 100}
+              calory: 100,
+              isLiked: false}
             ]}
             menuType = "1" />
           <MenuItem
             menuDate = "20210527"
             menuList = {[
               {name: "쌀밥",
-              calory: 100},
+              calory: 100,
+              isLiked: true},
               {name: "햄소시지찌개",
-              calory: 100},
+              calory: 100,
+              isLiked: false},
               {name: "닭고기양념튀김",
-              calory: 100},
+              calory: 100,
+              isLiked: false},
               {name: "배추김치",
-              calory: 100}
+              calory: 100,
+              isLiked: false}
             ]}
             menuType = "2" />
         </div>
