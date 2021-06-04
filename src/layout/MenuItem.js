@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 
-import {faThumbsUp} from "@fortawesome/free-solid-svg-icons";
-import {faThumbOFF} from "@fortawesome/free-regular-svg-icons";
+import {faThumbsUp as faThumbON} from "@fortawesome/free-solid-svg-icons";
+import {faThumbsUp as faThumbOFF} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import "./MenuItem.css";
@@ -60,7 +60,7 @@ class MenuItem extends Component {
                     <p>{menuData.calory}kcal</p>
                   </div>
                   <div className="menuElementThumb">
-                    <FontAwesomeIcon className="iconThumb" icon={faThumbsUp} />
+                    <FontAwesomeIcon className="iconThumb" icon={faThumbON} />
                   </div>
                 </div>
               )
