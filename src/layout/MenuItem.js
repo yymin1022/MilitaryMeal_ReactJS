@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import {If, Else, Then} from "react-if";
 
 import {faThumbsUp as faThumbON} from "@fortawesome/free-solid-svg-icons";
 import {faThumbsUp as faThumbOFF} from "@fortawesome/free-regular-svg-icons";
@@ -60,7 +61,14 @@ class MenuItem extends Component {
                     <p>{menuData.calory}kcal</p>
                   </div>
                   <div className="menuElementThumb">
-                    <FontAwesomeIcon className="iconThumb" icon={faThumbON} />
+                    <If condition={menuData.isLiked}>
+                      <Then>
+                        <FontAwesomeIcon className="iconThumb" icon={faThumbON} />
+                      </Then>
+                      <Else>
+                        <FontAwesomeIcon className="iconThumb" icon={faThumbOFF} />
+                      </Else>
+                    </If>
                   </div>
                 </div>
               )
