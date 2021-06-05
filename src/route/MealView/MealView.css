@@ -1,4 +1,7 @@
 .mealItem{
     border: 2px solid #AAAAAA;
     border-radius: 10px;
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
