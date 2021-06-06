@@ -28,10 +28,11 @@ const Default = props => {
           <Link to={{
             pathname: "/rank",
             state: {
-              currentSession: children.currentSession
+              currentSession: React.Children.map(this.props.children, child => child.props.data)
             }
           }}>
             <div>RankView</div>
+            <div>DEBUG {React.Children.map(this.props.children, child => child.props.data)}</div>
           </Link>
         </div>
       </div>
