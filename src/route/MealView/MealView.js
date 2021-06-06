@@ -48,7 +48,7 @@ class MealView extends Component{
               <SwiperSlide>Slide 7</SwiperSlide>
             </Swiper>
 
-          <MenuItem
+          {/* <MenuItem
             currentSession = {this.currentSession}
             menuDate = "20210527"
             menuList = {[
@@ -101,11 +101,11 @@ class MealView extends Component{
               calory: 100,
               isLiked: false}
             ]}
-            menuType = "2" />
+            menuType = "2" /> */}
         </div>
       </div>
     );
   }
 }
-
+ 
 export default MealView;
