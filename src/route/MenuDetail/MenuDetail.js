@@ -29,7 +29,7 @@ class MenuDetail extends Component{
     render(){
         return(
             <div className="MenuDetail">
-                <SessionCheck currentSession={this.currentSession}/>
+                {/* <SessionCheck currentSession={this.currentSession}/> */}
                 <div>
                     <h3>MenuDetail</h3>
                     <h4>{this.menuDate} / {this.menuType}</h4>

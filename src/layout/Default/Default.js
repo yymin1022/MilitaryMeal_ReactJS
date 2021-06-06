@@ -32,7 +32,7 @@ const Default = props => {
             }
           }}>
             <div>RankView</div>
-            <div>DEBUG {React.Children.map(this.props.children, child => child.props.data)}</div>
+            {/* <div>DEBUG {React.Children.map(this.props.children, child => child.props.data)}</div> */}
           </Link>
         </div>
       </div>

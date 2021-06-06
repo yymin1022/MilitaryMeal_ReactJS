@@ -17,7 +17,7 @@ class RankView extends Component{
 
     return(
       <div className="RankView">
-        <SessionCheck currentSession={this.currentSession}/>
+        {/* <SessionCheck currentSession={this.currentSession}/> */}
         <RankItem 
           currentSession = {this.currentSession}
           rankList = {this.rankList}/>

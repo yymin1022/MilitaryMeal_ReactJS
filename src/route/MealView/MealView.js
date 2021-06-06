@@ -22,7 +22,7 @@ class MealView extends Component{
   render(){
     return(
       <div className="MealView">
-        <SessionCheck currentSession={this.currentSession}/>
+        {/* <SessionCheck currentSession={this.currentSession}/> */}
         <div className="mealDate">
         </div>
         <div className="mealItem">
