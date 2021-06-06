@@ -20,7 +20,7 @@ const Default = props => {
           <Link to={{
             pathname: "/",
             state: {
-              currentSession: children.currentSession
+              // currentSession: children.currentSession
             }
           }}>
             <div>MealView</div>
@@ -28,7 +28,7 @@ const Default = props => {
           <Link to={{
             pathname: "/rank",
             state: {
-              currentSession: React.Children.map(this.props.children, child => child.props.data)
+              // currentSession: React.Children.map(this.props.children, child => child.props.data)
             }
           }}>
             <div>RankView</div>
