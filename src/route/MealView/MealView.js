@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Navigaion, A11y} from "swiper";
 
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
 import SessionCheck from "/home/server/ui/src/SessionCheck";
 
