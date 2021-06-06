@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import SwiperCore, {Navigaion, A11y} from "swiper";
+import SwiperCore, {Navigaion} from "swiper";
 
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
@@ -11,7 +11,7 @@ import SessionCheck from "/home/server/ui/src/SessionCheck";
 
 import "./MealView.css";
 
-SwiperCore.use([Navigaion, A11y]);
+SwiperCore.use([Navigaion]);
 
 class MealView extends Component{
   constructor() {
@@ -38,7 +38,9 @@ class MealView extends Component{
             className="swiper-container"
             spaceBetween={50}
             slidesPerView={1}
-            navigation>
+            navigation
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}>
               <SwiperSlide>Slide 1</SwiperSlide>
               <SwiperSlide>Slide 2</SwiperSlide>
               <SwiperSlide>Slide 3</SwiperSlide>
