@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+import {Swiper, SwiperSlide} from "swiper/react";
+import SwiperCore, {Navigaion, A11y} from "swiper";
+
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
 import SessionCheck from "/home/server/ui/src/SessionCheck";
 
@@ -16,7 +19,7 @@ class MealView extends Component{
       this.currentSession = this.props.location.state.currentSession;
     }catch(error){
       this.currentSession = "NO_SESSION"
-    }
+    }ㅣ
   }
 
   render(){
@@ -32,7 +35,7 @@ class MealView extends Component{
             menuList = {[
               {name: "쌀밥",
               calory: 100,
-              isLiked: true},
+              isLiked: true},ㄹ
               {name: "김치찌개",
               calory: 100,
               isLiked: false},
