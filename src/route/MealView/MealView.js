@@ -4,7 +4,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {Pagination} from "swiper";
 
 import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
 
 import MenuItem from "/home/server/ui/src/layout/MenuItem";
 import SessionCheck from "/home/server/ui/src/SessionCheck";
