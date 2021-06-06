@@ -15,6 +15,7 @@ class MenuItem extends Component {
   }
 
   UNSAFE_componentWillMount(){
+    this.currentSession = this.props.currentSession;
     this.menuDate = this.props.menuDate;
     this.menuList = this.props.menuList;
 
@@ -38,7 +39,7 @@ class MenuItem extends Component {
         to={{
           pathname: "/menuDetail",
           state: {
-            currentSession: "TEST_SESSION",
+            currentSession: this.currentSession,
 
             menuDate: this.menuDate,
             menuList: this.menuList,

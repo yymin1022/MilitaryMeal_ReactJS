@@ -27,6 +27,7 @@ class MealView extends Component{
         </div>
         <div className="mealItem">
           <MenuItem
+            currentSession = {this.currentSession}
             menuDate = "20210527"
             menuList = {[
               {name: "쌀밥",
@@ -44,6 +45,7 @@ class MealView extends Component{
             ]}
             menuType = "0" />
           <MenuItem
+            currentSession = {this.currentSession}
             menuDate = "20210527"
             menuList = {[
               {name: "쌀밥",
@@ -61,6 +63,7 @@ class MealView extends Component{
             ]}
             menuType = "1" />
           <MenuItem
+            currentSession = {this.currentSession}
             menuDate = "20210527"
             menuList = {[
               {name: "쌀밥",

@@ -7,6 +7,7 @@ class RankItem extends Component {
   }
 
   UNSAFE_componentWillMount(){
+    this.currentSession = this.props.currentSession;
     this.rankList = this.props.rankList;
   }
 
