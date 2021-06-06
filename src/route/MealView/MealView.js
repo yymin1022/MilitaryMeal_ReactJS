@@ -37,7 +37,7 @@ class MealView extends Component{
           <Swiper
             className="swiper-container"
             spaceBetween={50}
-            slidesPerView={1}
+            slidesPerView={7}
             // navigation
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}>
