@@ -17,10 +17,20 @@ const Default = props => {
           LOGO
         </div>
         <div className="HeaderNav">
-          <Link to="/">
+          <Link to={{
+            pathname: "/",
+            state: {
+              currentSession: children.props.currentSession
+            }
+          }}>
             <div>MealView</div>
           </Link>
-          <Link to="/rank">
+          <Link to={{
+            pathname: "/rank",
+            state: {
+              currentSession: children.props.currentSession
+            }
+          }}>
             <div>RankView</div>
           </Link>
         </div>

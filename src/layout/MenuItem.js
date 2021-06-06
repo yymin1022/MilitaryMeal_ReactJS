@@ -40,7 +40,6 @@ class MenuItem extends Component {
           pathname: "/menuDetail",
           state: {
             currentSession: this.currentSession,
-
             menuDate: this.menuDate,
             menuList: this.menuList,
             menuType: this.props.menuType,
