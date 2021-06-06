@@ -11,6 +11,8 @@ import SessionCheck from "/home/server/ui/src/SessionCheck";
 
 import "./MealView.css";
 
+SwiperCore.use([Navigaion, A11y]);
+
 class MealView extends Component{
   constructor() {
     super();
@@ -32,6 +34,20 @@ class MealView extends Component{
         <div className="mealDate">
         </div>
         <div className="mealItem">
+          <Swiper
+            className="swiper-container"
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation>
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+              <SwiperSlide>Slide 5</SwiperSlide>
+              <SwiperSlide>Slide 6</SwiperSlide>
+              <SwiperSlide>Slide 7</SwiperSlide>
+            </Swiper>
+
           <MenuItem
             currentSession = {this.currentSession}
             menuDate = "20210527"
