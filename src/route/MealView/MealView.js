@@ -41,13 +41,27 @@ class MealView extends Component{
             // navigation
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}>
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-              <SwiperSlide>Slide 7</SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 1</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 2</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 3</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 4</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 5</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 6</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>Slide 7</div>
+              </SwiperSlide>
             </Swiper>
 
           {/* <MenuItem
