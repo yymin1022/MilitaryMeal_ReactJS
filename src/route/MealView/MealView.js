@@ -12,13 +12,13 @@ class MealView extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    // this.currentSession = this.props.location.state.currentSession;
+    this.currentSession = this.props.location.state.currentSession;
   }
 
   render(){
     return(
       <div className="MealView">
-        {/* <SessionCheck currentSession={this.currentSession}/> */}
+        <SessionCheck currentSession={this.currentSession}/>
         <div className="mealDate">
         </div>
         <div className="mealItem">
