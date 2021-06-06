@@ -54,7 +54,7 @@ class MealView extends Component{
             menuList = {[
               {name: "쌀밥",
               calory: 100,
-              isLiked: true},ㄹ
+              isLiked: true},
               {name: "김치찌개",
               calory: 100,
               isLiked: false},
