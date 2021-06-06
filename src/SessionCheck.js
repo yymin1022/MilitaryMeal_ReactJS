@@ -9,7 +9,7 @@ class SessionCheck extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    if(typeof this.props.currentSession !== "undefined"){
+    if(this.props.currentSession){
       this.currentSession = this.props.currentSession;
 
       if(this.currentSession == "TEST_SESSION"){
