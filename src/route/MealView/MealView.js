@@ -11,7 +11,7 @@ import SessionCheck from "/home/server/ui/src/SessionCheck";
 
 import "./MealView.css";
 
-SwiperCore.use([Navigaion]);
+// SwiperCore.use([Navigaion]);
 
 class MealView extends Component{
   constructor() {
@@ -38,7 +38,7 @@ class MealView extends Component{
             className="swiper-container"
             spaceBetween={50}
             slidesPerView={1}
-            navigation
+            // navigation
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}>
               <SwiperSlide>Slide 1</SwiperSlide>
