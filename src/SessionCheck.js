@@ -9,16 +9,11 @@ class SessionCheck extends Component{
   }
 
   UNSAFE_componentWillMount(){
-    if(this.props){
-      this.currentSession = this.props.currentSession;
+    this.currentSession = this.props.currentSession;
 
-      if(this.currentSession == "TEST_SESSION"){
-          this.isSessionOK = true;
-      }
-    }else{
-      this.isSessionOK = false;
+    if(this.currentSession == "TEST_SESSION"){
+        this.isSessionOK = true;
     }
-    
   }
 
   render(){
