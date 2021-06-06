@@ -4,7 +4,11 @@ import SessionCheck from "/home/server/ui/src/SessionCheck";
 
 class MenuDetail extends Component{
     UNSAFE_componentWillMount(){
-        // this.currentSession = this.props.location.state.currentSession;
+        try{
+            this.currentSession = this.props.location.state.currentSession;
+        }catch(error){
+            this.currentSession = "NO_SESSION"
+        }
 
         this.menuDate = this.props.location.state.menuDate;
         this.menuList = this.props.location.state.menuList;
@@ -25,7 +29,7 @@ class MenuDetail extends Component{
     render(){
         return(
             <div className="MenuDetail">
-                {/* <SessionCheck currentSession={this.currentSession}/> */}
+                <SessionCheck currentSession={this.currentSession}/>
                 <div>
                     <h3>MenuDetail</h3>
                     <h4>{this.menuDate} / {this.menuType}</h4>
