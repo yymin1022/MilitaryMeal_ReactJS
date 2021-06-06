@@ -24,7 +24,7 @@ class MealView extends Component{
       this.currentSession = this.props.location.state.currentSession;
     }catch(error){
       this.currentSession = "NO_SESSION"
-    }ㅣ
+    }
   }
 
   render(){
